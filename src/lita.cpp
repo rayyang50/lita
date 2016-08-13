@@ -90,10 +90,9 @@ int main(int argc, char *argv[]) {
 
   // open output file
 	cout << "\noutput file" << endl;
-	ofstream ofs("../result.txt");
+	ofstream ofs("../result/result.txt");
 
   // print data to file
-  ofs << "n1 n2 n3 n4 n5 n6 n7 sum3 sum4" << endl;
   map<long long int, long long int>::iterator iter;
   for(iter = buff.begin(); iter != buff.end(); iter++) {
     int arr[7] = {0};
